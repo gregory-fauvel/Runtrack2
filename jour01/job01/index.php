@@ -7,11 +7,11 @@ $str2="Vive";
 
 $str3="!";
 
-echo "$str2";
+echo $str2;
 echo "LaPlateforme";
-echo "$str3";
+echo $str3;
 
-$val=6;
+$val="6";
 echo $val;
 
 $val=$val+4;
