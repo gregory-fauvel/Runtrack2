@@ -1,33 +1,29 @@
+
 <form method="get" action="index.php">
 	<label>Arguments</label><br>
-	<input type="text" name="argument"><br>
+	<input type="text" name="vide"><br>
 	<label>Valeurs</label><br>
-	<input type="text" name="valeur"><br>
-	<input type="submit" value="ok">
-	
-</form>
-
-
+	<input type="text" name="plein"><br>
+	<input type="submit" value="ok">	
+</form>	
 <table>
-	<thead>
-		<tr>
-			<th>Arguments</th>
-			<th>Valeurs</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>
-				<?php
-				echo $_GET ["argument"]
-				?>
-			</td>
-			<td>
-				<?php
-				echo $_GET ["valeur"]
-				?>
-			</td>
-		</tr>
-	</tbody>
-</table>
+	<tr>
+		<th>Arguments</th>
+		<th>Valeur</th>
+	</tr>
+
+<?php
+				echo "<table>";
+				foreach ($_GET as $key => $value) {
+				echo"<tr>";
+				echo"<td>";
+				echo $key;
+				echo"<td>";
+				echo $value;
+				echo"</td>";
+				echo"</tr>";
+			}
+				echo "</table>";
+			?>
+			</table>
 
