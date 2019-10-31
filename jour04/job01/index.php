@@ -11,9 +11,12 @@
 	
 </form>
 <?php
+$chiffre=0;
 
 foreach ($_GET as $key => $value) {
 	echo $value;
+	$chiffre=$chiffre+1;
 }
+	echo $chiffre;
 
 ?>
