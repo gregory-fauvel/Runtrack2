@@ -7,19 +7,19 @@
 </form>	
 
 <?php
-$i=0;
 
-if ($_POST["Name"]&& $_POST["Mot de passe"]=="Rambo")
+if($_POST==true){
+
+if ($_POST["username"]=="John"&& $_POST["password"]=="Rambo" )
 {
 echo "C est pas ma guerre";
 }
 
-
 else
 {
-echo"Votre pire cauchemar";
+echo "Votre pire cauchemar";
 }
 
-
+}
 	
 ?>
