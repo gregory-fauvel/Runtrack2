@@ -1,88 +1,48 @@
 <?php
-	$bool = true;
-	$int = 10;
-	$string = "grégory";
-	$float = 10.3;
+$bool=true;
+$int="grégory";
+$chaine=30;
+$float=3.2;
 ?>
-
-
-
 <table>
-<tr>
-	<th>Type</th>
-	<th>Nom</th>
-	<th>Valeur</th>
-</tr>
-<tr>
-	<td>
-		<?php
-			echo gettype($bool);
-		?>
-	</td>
-	<td>
-		<?php
-			echo "bool";
-		?>
-		
-	</td>
-	<td>
-		<?php
+	<tr>
+		<th>type</th>
+		<th>nom</th>
+		<th>valeur</th>
+	</tr>
+	<tr>
+		<td>booleen</td>
+		<td>true</td>
+		<td><?php
 			echo $bool;
-		?>
-	</td>
-</tr>
-<tr>
-	<td>
-		<?php
-			echo gettype($int);
-		?>
-	</td>
-	<td>
-		<?php
-			echo "int";
-		?>
-		
-	</td>
-	<td>
-		<?php
+			?></td>
+	</tr>
+	<tr>
+		<td>integer</td>
+		<td>int</td>
+		<td>
+			<?php
 			echo $int;
-		?>
-	</td>
-</tr>
-<tr>
-	<td>
-		<?php
-			echo gettype($string);
-		?>
-	</td>
-	<td>
-		<?php
-			echo "string";
-		?>
-		
-	</td>
-	<td>
-		<?php
-			echo $string;
-		?>
-	</td>
-</tr>
-<tr>
-	<td>
-		<?php
-			echo gettype($float);
-		?>
-	</td>
-	<td>
-		<?php
-			echo "float";
-		?>
-		
-	</td>
-	<td>
-		<?php
+			?>
+		</td>
+	</tr>
+	<tr>
+		<td>nbr virgule</td>
+		<td>float</td>
+		<td>
+			<?php
 			echo $float;
-		?>
-	</td>
-</tr>
+			?>
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>string</td>
+		<td>caractere</td>
+		<td>
+			<?php
+			echo $chaine;
+			?>
+		</td>
+	</tr>
 </table>
