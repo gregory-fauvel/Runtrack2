@@ -1,23 +1,35 @@
 <?php
-$number = 2 ;
+ function affichePremiers($n){
 
-	while ($number < 1000 )
-		{
-		$div_count=0;
-	for ( $i=1;$i<=$number;$i++)
-		{
-	if (($number%$i)==0)
-		{
-		$div_count++;
-		}
-		}
-	if ($div_count<3)
-		{
-	echo $number." <br/> ";
-		}
-	$number=$number+1;
-		}
+        $premier = false;
+        if($n<0){
+            $premier = true;
+            $n = -$n;
+        }
+        
+        for($i=2;$i<=$n;$i++){
+            $n2 = 0;
+
+        for($j=1;$j<=$i;$j++){
+                if($i%$j==0){
+                    $n2++;            
+                }
+            }
+            if($n2 == 2){
+    
+                if($premier){
+                    echo "";
+                }
+                echo $i;
+                echo "<br/>";
+            }
+        }
+    }
+     affichePremiers(1000);
 ?>
+    
+
+
 
                                
 
