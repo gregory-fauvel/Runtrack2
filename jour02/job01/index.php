@@ -2,7 +2,8 @@
 	$debut=0;
 
 
-	while ($debut!=1338) {
+	while ($debut!=1338) 
+	{
 		echo $debut;
 		$debut=$debut+1;
 		echo "<br>";
